@@ -242,9 +242,9 @@ const HeroSection = () => {
             {/* Stats */}
             <div className="opacity-0 animate-fade-up delay-500 flex gap-8 pt-4 border-t border-border/50">
               {[
-                { num: "3+", label: "Anos de Prática" },
-                { num: "40+", label: "Projectos" },
-                { num: "15+", label: "Clientes" },
+                { num: "1+", label: "Anos de Prática" },
+                { num: "5+", label: "Projectos" },
+                { num: "4+", label: "Clientes" },
               ].map((s) => (
                 <div key={s.label}>
                   <div className="text-2xl font-black text-gold glow-text font-body">{s.num}</div>
@@ -274,7 +274,7 @@ const HeroSection = () => {
                 style={{ animationDelay: "1s", zIndex: 20 }}
               >
                 <div className="text-[9px] text-muted-foreground uppercase tracking-widest">Stack</div>
-                <div className="text-xs font-bold text-foreground font-body">Figma · Framer</div>
+                <div className="text-xs font-bold text-foreground font-body">Figma · Visily</div>
               </div>
 
               {/* Photo */}

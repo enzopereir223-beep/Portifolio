@@ -6,7 +6,7 @@ import { Award, Briefcase, Download, Sparkles } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 
-const tools = ["Figma", "Adobe XD", "Framer", "Illustrator", "Photoshop", "Principle", "Zeplin", "Notion"];
+const tools = ["Figma", "Visily", "HTML", "CSS", "Tailwind", "JavaScript", "React", "Next.js", "PHP", "MySQL", "GitHub"];
 
 const SkillBar = ({ name, level }: { name: string; level: number }) => {
   const barRef = useRef<HTMLDivElement>(null);
@@ -85,8 +85,8 @@ const AboutPage = () => {
           {/* Floating stat badges */}
           <div className="flex flex-wrap gap-4 mt-8 animate-fade-up delay-400">
             {[
-              { num: "3+", label: "Anos" },
-              { num: "40+", label: "Projectos" },
+              { num: "1+", label: "Anos" },
+              { num: "5+", label: "Projectos" },
               { num: "100%", label: "Satisfação" },
             ].map((s) => (
               <div key={s.label} className="flex items-center gap-3 border border-gold/20 bg-gold/5 px-5 py-3 backdrop-blur">
@@ -116,7 +116,7 @@ const AboutPage = () => {
                   <Award className="w-4 h-4 text-gold" />
                   <div>
                     <div className="text-[10px] text-muted-foreground uppercase tracking-widest">Reconhecimento</div>
-                    <div className="text-xs font-bold text-foreground font-body">Top Designer 2024</div>
+                    <div className="text-xs font-bold text-foreground font-body">UI/UX Designer</div>
                   </div>
                 </div>
               </div>

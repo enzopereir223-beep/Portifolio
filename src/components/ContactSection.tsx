@@ -19,8 +19,8 @@ const ContactSection = () => {
     },
   });
 
-  const email = settings.email || "lucilene.designer@gmail.com";
-  const phone = settings.phone || "+244 923 456 789";
+  const email = settings.email || "lucilenepereirr123@gmail.com";
+  const phone = settings.phone || "+244 928 861 696";
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -104,7 +104,7 @@ const ContactSection = () => {
 
             {/* Stats */}
             <div className="flex gap-8 pt-6 border-t border-border/30">
-              {[{ n: "40+", l: "Projectos" }, { n: "100%", l: "Satisfação" }, { n: "24h", l: "Resposta" }].map((s) => (
+              {[{ n: "5+", l: "Projectos" }, { n: "100%", l: "Satisfação" }, { n: "24h", l: "Resposta" }].map((s) => (
                 <div key={s.l}>
                   <div className="text-2xl font-black text-gold font-body">{s.n}</div>
                   <div className="text-[10px] tracking-widest text-muted-foreground uppercase font-body mt-1">{s.l}</div>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin, Github } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -42,13 +42,14 @@ const Footer = () => {
           <div>
             <div className="text-[10px] tracking-widest text-muted-foreground uppercase font-body mb-4">Contacto</div>
             <div className="space-y-2 mb-4">
-              <p className="text-sm text-muted-foreground font-body">lucilene.designer@gmail.com</p>
+              <p className="text-sm text-muted-foreground font-body">lucilenepereirr123@gmail.com</p>
               <p className="text-sm text-muted-foreground font-body">Luanda, Angola</p>
             </div>
             <div className="flex gap-3">
               {[
                 { icon: Linkedin, href: "#" },
                 { icon: Instagram, href: "#" },
+                { icon: Github, href: "https://github.com/enzopereir223-beep" },
               ].map(({ icon: Icon, href }, i) => (
                 <a key={i} href={href} className="w-8 h-8 border border-border/50 hover:border-gold/50 flex items-center justify-center text-muted-foreground hover:text-gold transition-all">
                   <Icon className="w-3.5 h-3.5" />

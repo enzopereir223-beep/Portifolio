@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Mail, MapPin, MessageSquare, Copy, Send, Instagram, Linkedin, Globe, Sparkles, Phone } from "lucide-react";
+import { Mail, MapPin, MessageSquare, Copy, Send, Instagram, Linkedin, Globe, Sparkles, Phone, Github } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useQuery } from "@tanstack/react-query";
 import { toast } from "@/hooks/use-toast";
@@ -21,8 +21,8 @@ const ContactPage = () => {
     },
   });
 
-  const email = settings.email || "lucilene.designer@gmail.com";
-  const phone = settings.phone || "+244 923 456 789";
+  const email = settings.email || "lucilenepereirr123@gmail.com";
+  const phone = settings.phone || "+244 928 861 696";
   const linkedinUrl = settings.linkedin_url || "#";
   const instagramUrl = settings.instagram_url || "#";
 
@@ -141,6 +141,9 @@ const ContactPage = () => {
                   </a>
                   <a href={instagramUrl} className="flex items-center gap-2 px-4 py-2 border border-border/50 hover:border-gold/50 hover:text-gold text-muted-foreground text-xs font-body tracking-wide transition-all">
                     <Instagram className="w-3.5 h-3.5" /> Instagram
+                  </a>
+                  <a href="https://github.com/enzopereir223-beep" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 border border-border/50 hover:border-gold/50 hover:text-gold text-muted-foreground text-xs font-body tracking-wide transition-all">
+                    <Github className="w-3.5 h-3.5" /> GitHub
                   </a>
                 </div>
               </div>
